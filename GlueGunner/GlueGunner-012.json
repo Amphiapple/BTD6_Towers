@@ -2,9 +2,9 @@
   "$type": "Assets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
   "display": {
     "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-    "GUID": "d58290defc380254ab7854ee680dfc6b",
+    "GUID": "90a109865e099a0438351975d2100b13",
     "IsValid": true,
-    "guidRef": "d58290defc380254ab7854ee680dfc6b"
+    "guidRef": "90a109865e099a0438351975d2100b13"
   },
   "baseId": "GlueGunner",
   "cost": 225.0,
@@ -13,11 +13,11 @@
   "range": 46.0,
   "ignoreBlockers": false,
   "isGlobalRange": false,
-  "tier": 0,
+  "tier": 2,
   "tiers": [
     0,
-    0,
-    0
+    1,
+    2
   ],
   "towerSet": 1,
   "icon": {
@@ -28,15 +28,15 @@
   },
   "portrait": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "4cf5ed7ac85b3ad4cb921bf7b7a24e16",
+    "GUID": "ecfaf203e704ae94e8e1baa0d5541770",
     "IsValid": true,
-    "guidRef": "4cf5ed7ac85b3ad4cb921bf7b7a24e16"
+    "guidRef": "ecfaf203e704ae94e8e1baa0d5541770"
   },
   "instaIcon": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "c2f33899ed5354935a5209348354522f",
+    "GUID": "b44303da10a5d4f91a05ac20d352270a",
     "IsValid": true,
-    "guidRef": "c2f33899ed5354935a5209348354522f"
+    "guidRef": "b44303da10a5d4f91a05ac20d352270a"
   },
   "areaTypes": [
     2
@@ -88,17 +88,17 @@
   "ignoreTowerForSelection": false,
   "behaviors": [
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
       "effectModel": {
         "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
         "assetId": {
           "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-          "GUID": "d2bcad0f16bb76e408a107e13b2c0da3",
+          "GUID": "b1dec8a8d79593843bc2e2410eae944e",
           "IsValid": true,
-          "guidRef": "d2bcad0f16bb76e408a107e13b2c0da3"
+          "guidRef": "b1dec8a8d79593843bc2e2410eae944e"
         },
         "scale": 1.0,
-        "lifespan": 6.0,
+        "lifespan": 1.0,
         "fullscreen": 0,
         "useCenterPosition": false,
         "useTransformPosition": false,
@@ -106,40 +106,11 @@
         "destroyOnTransformDestroy": false,
         "alwaysUseAge": false,
         "useRoundTime": false,
-        "name": "EffectModel_PlacementEffect",
+        "name": "EffectModel_SellEffect",
         "ImplementationType": null
       },
-      "name": "CreateEffectOnPlaceModel_GlueGunner",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
-      "sound1": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "0782b04f742eb2542bc8266a38241c5b",
-          "IsValid": true,
-          "guidRef": "0782b04f742eb2542bc8266a38241c5b"
-        },
-        "name": "SoundModel_PlaceSound1",
-        "ImplementationType": null
-      },
-      "sound2": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "80580fcd99708624ab85e37036ca124c",
-          "IsValid": true,
-          "guidRef": "80580fcd99708624ab85e37036ca124c"
-        },
-        "name": "SoundModel_PlaceSound2",
-        "ImplementationType": null
-      },
-      "heroSound1": null,
-      "heroSound2": null,
-      "name": "CreateSoundOnTowerPlaceModel_GlueGunner",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+      "name": "CreateEffectOnSellModel_GlueGunner-012",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
@@ -154,7 +125,7 @@
         "name": "SoundModel_SellSound",
         "ImplementationType": null
       },
-      "name": "CreateSoundOnSellModel_GlueGunner",
+      "name": "CreateSoundOnSellModel_GlueGunner-012",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -258,28 +229,21 @@
         "name": "SoundModel_UpgradeSound",
         "ImplementationType": null
       },
-      "name": "CreateSoundOnUpgradeModel_GlueGunner",
+      "name": "CreateSoundOnUpgradeModel_GlueGunner-012",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
-      "placeAnimation": 2,
-      "upgradeAnimation": -1,
-      "name": "PlayAnimationIndexModel_GlueGunner",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PlayAnimationIndex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
       "effectModel": {
         "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
         "assetId": {
           "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-          "GUID": "b1dec8a8d79593843bc2e2410eae944e",
+          "GUID": "d2bcad0f16bb76e408a107e13b2c0da3",
           "IsValid": true,
-          "guidRef": "b1dec8a8d79593843bc2e2410eae944e"
+          "guidRef": "d2bcad0f16bb76e408a107e13b2c0da3"
         },
         "scale": 1.0,
-        "lifespan": 1.0,
+        "lifespan": 6.0,
         "fullscreen": 0,
         "useCenterPosition": false,
         "useTransformPosition": false,
@@ -287,11 +251,40 @@
         "destroyOnTransformDestroy": false,
         "alwaysUseAge": false,
         "useRoundTime": false,
-        "name": "EffectModel_SellEffect",
+        "name": "EffectModel_PlacementEffect",
         "ImplementationType": null
       },
-      "name": "CreateEffectOnSellModel_GlueGunner",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+      "name": "CreateEffectOnPlaceModel_GlueGunner-012",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+      "sound1": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "0782b04f742eb2542bc8266a38241c5b",
+          "IsValid": true,
+          "guidRef": "0782b04f742eb2542bc8266a38241c5b"
+        },
+        "name": "SoundModel_PlaceSound1",
+        "ImplementationType": null
+      },
+      "sound2": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "80580fcd99708624ab85e37036ca124c",
+          "IsValid": true,
+          "guidRef": "80580fcd99708624ab85e37036ca124c"
+        },
+        "name": "SoundModel_PlaceSound2",
+        "ImplementationType": null
+      },
+      "heroSound1": null,
+      "heroSound2": null,
+      "name": "CreateSoundOnTowerPlaceModel_GlueGunner-012",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
@@ -316,7 +309,7 @@
         "ImplementationType": null
       },
       "createOnAirUnit": false,
-      "name": "CreateEffectOnUpgradeModel_GlueGunner",
+      "name": "CreateEffectOnUpgradeModel_GlueGunner-012",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -331,9 +324,9 @@
             "name": "SingleEmissionModel_",
             "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
           },
-          "ejectX": -1.77,
-          "ejectY": 15.74,
-          "ejectZ": 8.72,
+          "ejectX": -3.0,
+          "ejectY": 18.0,
+          "ejectZ": 7.9,
           "projectile": {
             "$type": "Assets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
             "display": {
@@ -344,7 +337,7 @@
             },
             "id": "Projectile",
             "maxPierce": 0.0,
-            "pierce": 1.0,
+            "pierce": 2.0,
             "scale": 1.0,
             "ignoreBlockers": false,
             "usePointCollisionWithBloons": false,
@@ -396,8 +389,8 @@
                 "countGlueAchievement": true,
                 "overlayType": "GlueBasic",
                 "collisionPass": -1,
-                "Lifespan": 11.0,
-                "Multiplier": 0.5,
+                "Lifespan": 24.0,
+                "Multiplier": 0.25,
                 "Mutator": {
                   "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.SlowModel+SlowMutator, Assembly-CSharp",
                   "mutationId": "Glue",
@@ -408,7 +401,7 @@
                   },
                   "dontRefreshDuration": false,
                   "didMutatorAffectBloon": false,
-                  "multiplier": 0.5,
+                  "multiplier": 0.25,
                   "filters": [],
                   "id": "Glue",
                   "isExclusiveInMutationList": false,
@@ -422,8 +415,8 @@
                 },
                 "name": "SlowModel_",
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Slow, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "lifespan": 11.0,
-                "multiplier": 0.5
+                "lifespan": 24.0,
+                "multiplier": 0.25
               },
               {
                 "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
@@ -560,7 +553,7 @@
               0
             ],
             "canCollideWithBloons": true,
-            "radius": 4.0,
+            "radius": 5.0,
             "vsBlockerRadius": 0.0,
             "hasDamageModifiers": false,
             "dontUseCollisionChecker": false,
@@ -568,7 +561,7 @@
             "ignoreNonTargetable": false,
             "ignorePierceExhaustion": false,
             "saveId": null,
-            "CappedPierce": 1.0,
+            "CappedPierce": 2.0,
             "name": "ProjectileModel_Projectile",
             "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Projectile, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
           },
@@ -673,9 +666,9 @@
       "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": {
         "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-        "GUID": "d58290defc380254ab7854ee680dfc6b",
+        "GUID": "90a109865e099a0438351975d2100b13",
         "IsValid": true,
-        "guidRef": "d58290defc380254ab7854ee680dfc6b"
+        "guidRef": "90a109865e099a0438351975d2100b13"
       },
       "layer": -1,
       "positionOffset": {
@@ -723,21 +716,20 @@
   "upgrades": [
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "GlueGunner-100",
-      "upgrade": "Glue Soak"
+      "tower": "GlueGunner-022",
+      "upgrade": "Glue Splatter"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "GlueGunner-010",
-      "upgrade": "Bigger Globs"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "GlueGunner-001",
-      "upgrade": "Stickier Glue"
+      "tower": "GlueGunner-013",
+      "upgrade": "MOAB Glue"
     }
   ],
-  "appliedUpgrades": [],
+  "appliedUpgrades": [
+    "Stickier Glue",
+    "Stronger Glue",
+    "Bigger Globs"
+  ],
   "targetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -792,7 +784,7 @@
   "isGeraldoItem": false,
   "IsBeastHandlerPet": false,
   "BeastHandlerLeashMutationId": "BeastHandlerContributionGlueGunner",
-  "IsBaseTower": true,
+  "IsBaseTower": false,
   "TargetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -824,6 +816,6 @@
     }
   ],
   "IsExclusivelyWaterBased": false,
-  "name": "GlueGunner",
+  "name": "GlueGunner-012",
   "ImplementationType": "Assets.Scripts.Simulation.Towers.Tower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
 }
