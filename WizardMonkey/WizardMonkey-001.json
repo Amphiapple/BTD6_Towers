@@ -2,9 +2,9 @@
   "$type": "Assets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
   "display": {
     "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-    "GUID": "d8a45c17dcf700a499c031dff73684a1",
+    "GUID": "e3bac24c4a9ba724a930fe5bb8dc8545",
     "IsValid": true,
-    "guidRef": "d8a45c17dcf700a499c031dff73684a1"
+    "guidRef": "e3bac24c4a9ba724a930fe5bb8dc8545"
   },
   "baseId": "WizardMonkey",
   "cost": 375.0,
@@ -13,11 +13,11 @@
   "range": 40.0,
   "ignoreBlockers": false,
   "isGlobalRange": false,
-  "tier": 0,
+  "tier": 1,
   "tiers": [
     0,
     0,
-    0
+    1
   ],
   "towerSet": 4,
   "icon": {
@@ -28,15 +28,15 @@
   },
   "portrait": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "17bad5ce3dcfc45d1b38d9ca31b29995",
+    "GUID": "5854040e2febd4b25be86620221e2581",
     "IsValid": true,
-    "guidRef": "17bad5ce3dcfc45d1b38d9ca31b29995"
+    "guidRef": "5854040e2febd4b25be86620221e2581"
   },
   "instaIcon": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "9da7c6a491e12423086edf5557f298e9",
+    "GUID": "ab08a6b7a8d23404281fef136450d821",
     "IsValid": true,
-    "guidRef": "9da7c6a491e12423086edf5557f298e9"
+    "guidRef": "ab08a6b7a8d23404281fef136450d821"
   },
   "areaTypes": [
     2
@@ -116,44 +116,8 @@
         "name": "EffectModel_PlacementEffect",
         "ImplementationType": null
       },
-      "name": "CreateEffectOnPlaceModel_WizardMonkey",
+      "name": "CreateEffectOnPlaceModel_WizardMonkey-001",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
-      "sound1": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "0782b04f742eb2542bc8266a38241c5b",
-          "IsValid": true,
-          "guidRef": "0782b04f742eb2542bc8266a38241c5b"
-        },
-        "name": "SoundModel_PlaceSound1",
-        "ImplementationType": null
-      },
-      "sound2": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "80580fcd99708624ab85e37036ca124c",
-          "IsValid": true,
-          "guidRef": "80580fcd99708624ab85e37036ca124c"
-        },
-        "name": "SoundModel_PlaceSound2",
-        "ImplementationType": null
-      },
-      "heroSound1": null,
-      "heroSound2": null,
-      "name": "CreateSoundOnTowerPlaceModel_WizardMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
-      "placeAnimation": 2,
-      "upgradeAnimation": -1,
-      "name": "PlayAnimationIndexModel_WizardMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PlayAnimationIndex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
@@ -256,7 +220,7 @@
         "name": "SoundModel_UpgradeSound",
         "ImplementationType": null
       },
-      "name": "CreateSoundOnUpgradeModel_WizardMonkey",
+      "name": "CreateSoundOnUpgradeModel_WizardMonkey-001",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -272,7 +236,7 @@
         "name": "SoundModel_SellSound",
         "ImplementationType": null
       },
-      "name": "CreateSoundOnSellModel_WizardMonkey",
+      "name": "CreateSoundOnSellModel_WizardMonkey-001",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -297,8 +261,37 @@
         "name": "EffectModel_SellEffect",
         "ImplementationType": null
       },
-      "name": "CreateEffectOnSellModel_WizardMonkey",
+      "name": "CreateEffectOnSellModel_WizardMonkey-001",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+      "sound1": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "0782b04f742eb2542bc8266a38241c5b",
+          "IsValid": true,
+          "guidRef": "0782b04f742eb2542bc8266a38241c5b"
+        },
+        "name": "SoundModel_PlaceSound1",
+        "ImplementationType": null
+      },
+      "sound2": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "80580fcd99708624ab85e37036ca124c",
+          "IsValid": true,
+          "guidRef": "80580fcd99708624ab85e37036ca124c"
+        },
+        "name": "SoundModel_PlaceSound2",
+        "ImplementationType": null
+      },
+      "heroSound1": null,
+      "heroSound2": null,
+      "name": "CreateSoundOnTowerPlaceModel_WizardMonkey-001",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
@@ -323,7 +316,7 @@
         "ImplementationType": null
       },
       "createOnAirUnit": false,
-      "name": "CreateEffectOnUpgradeModel_WizardMonkey",
+      "name": "CreateEffectOnUpgradeModel_WizardMonkey-001",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -345,13 +338,13 @@
             "$type": "Assets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
             "display": {
               "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-              "GUID": "7367b996679da4f4a900902bf8d2a76f",
+              "GUID": "2a3f218e6e1d23344bd4478294864ebb",
               "IsValid": true,
-              "guidRef": "7367b996679da4f4a900902bf8d2a76f"
+              "guidRef": "2a3f218e6e1d23344bd4478294864ebb"
             },
             "id": "BaseProjectile",
             "maxPierce": 0.0,
-            "pierce": 3.0,
+            "pierce": 8.0,
             "scale": 1.0,
             "ignoreBlockers": false,
             "usePointCollisionWithBloons": false,
@@ -383,11 +376,11 @@
               {
                 "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
                 "collisionPass": 0,
-                "Speed": 200.0,
+                "Speed": 400.0,
                 "Lifespan": 0.4,
                 "name": "TravelStraitModel_BaseProjectile",
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.TravelStrait, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "speed": 200.0,
+                "speed": 400.0,
                 "lifespan": 0.4
               },
               {
@@ -409,9 +402,9 @@
                 "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                 "display": {
                   "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-                  "GUID": "7367b996679da4f4a900902bf8d2a76f",
+                  "GUID": "2a3f218e6e1d23344bd4478294864ebb",
                   "IsValid": true,
-                  "guidRef": "7367b996679da4f4a900902bf8d2a76f"
+                  "guidRef": "2a3f218e6e1d23344bd4478294864ebb"
                 },
                 "layer": 0,
                 "positionOffset": {
@@ -445,7 +438,7 @@
             "ignoreNonTargetable": false,
             "ignorePierceExhaustion": false,
             "saveId": null,
-            "CappedPierce": 3.0,
+            "CappedPierce": 8.0,
             "name": "ProjectileModel_BaseProjectile",
             "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Projectile, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
           },
@@ -537,9 +530,9 @@
       "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": {
         "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-        "GUID": "d8a45c17dcf700a499c031dff73684a1",
+        "GUID": "e3bac24c4a9ba724a930fe5bb8dc8545",
         "IsValid": true,
-        "guidRef": "d8a45c17dcf700a499c031dff73684a1"
+        "guidRef": "e3bac24c4a9ba724a930fe5bb8dc8545"
       },
       "layer": -1,
       "positionOffset": {
@@ -587,21 +580,23 @@
   "upgrades": [
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "WizardMonkey-001",
-      "upgrade": "Intense Magic"
+      "tower": "WizardMonkey-002",
+      "upgrade": "Monkey Sense"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "WizardMonkey-010",
+      "tower": "WizardMonkey-011",
       "upgrade": "Fireball"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "WizardMonkey-100",
+      "tower": "WizardMonkey-101",
       "upgrade": "Guided Magic"
     }
   ],
-  "appliedUpgrades": [],
+  "appliedUpgrades": [
+    "Intense Magic"
+  ],
   "targetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -656,7 +651,7 @@
   "isGeraldoItem": false,
   "IsBeastHandlerPet": false,
   "BeastHandlerLeashMutationId": "BeastHandlerContributionWizardMonkey",
-  "IsBaseTower": true,
+  "IsBaseTower": false,
   "TargetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -688,6 +683,6 @@
     }
   ],
   "IsExclusivelyWaterBased": false,
-  "name": "WizardMonkey",
+  "name": "WizardMonkey-001",
   "ImplementationType": "Assets.Scripts.Simulation.Towers.Tower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
 }
