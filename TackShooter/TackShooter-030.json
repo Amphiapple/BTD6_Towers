@@ -2,21 +2,21 @@
   "$type": "Assets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
   "display": {
     "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-    "GUID": "bade9757946dab74ba6214cafeb152a9",
+    "GUID": "d617dc9fb4015c54a8f37c08ee3c3bb6",
     "IsValid": true,
-    "guidRef": "bade9757946dab74ba6214cafeb152a9"
+    "guidRef": "d617dc9fb4015c54a8f37c08ee3c3bb6"
   },
   "baseId": "TackShooter",
   "cost": 280.0,
   "radius": 6.0,
   "radiusSquared": 36.0,
-  "range": 23.0,
+  "range": 30.82,
   "ignoreBlockers": false,
   "isGlobalRange": false,
-  "tier": 0,
+  "tier": 3,
   "tiers": [
     0,
-    0,
+    3,
     0
   ],
   "towerSet": 1,
@@ -28,20 +28,27 @@
   },
   "portrait": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "2afffe199cfadd24aae1d8c51e8970e6",
+    "GUID": "307b835b262cbfa439781267dac8a93f",
     "IsValid": true,
-    "guidRef": "2afffe199cfadd24aae1d8c51e8970e6"
+    "guidRef": "307b835b262cbfa439781267dac8a93f"
   },
   "instaIcon": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "0fedcd914a23f4d8b9e48fb187c7a679",
+    "GUID": "27c1b2daac7ef4d3b8afe500d2ade353",
     "IsValid": true,
-    "guidRef": "0fedcd914a23f4d8b9e48fb187c7a679"
+    "guidRef": "27c1b2daac7ef4d3b8afe500d2ade353"
   },
   "areaTypes": [
     2
   ],
   "mods": [
+    {
+      "$type": "Assets.Scripts.Models.Towers.Mods.ApplyModModel, Assembly-CSharp",
+      "mod": "PoppyBlades",
+      "target": "",
+      "name": "Blade Shooter",
+      "ImplementationType": null
+    },
     {
       "$type": "Assets.Scripts.Models.Towers.Mods.ApplyModModel, Assembly-CSharp",
       "mod": "GlobalAbilityCooldowns",
@@ -95,35 +102,6 @@
   "ignoreTowerForSelection": false,
   "behaviors": [
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
-      "sound1": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "432da2691e8684d4890db8228c70f225",
-          "IsValid": true,
-          "guidRef": "432da2691e8684d4890db8228c70f225"
-        },
-        "name": "SoundModel_PlaceStructureSound1",
-        "ImplementationType": null
-      },
-      "sound2": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "f6963c719015dd040a4cdd3c1aab644e",
-          "IsValid": true,
-          "guidRef": "f6963c719015dd040a4cdd3c1aab644e"
-        },
-        "name": "SoundModel_PlaceStructureSound2",
-        "ImplementationType": null
-      },
-      "heroSound1": null,
-      "heroSound2": null,
-      "name": "CreateSoundOnTowerPlaceModel_TackShooter",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
       "effectModel": {
         "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
@@ -145,7 +123,7 @@
         "name": "EffectModel_PlacementEffect",
         "ImplementationType": null
       },
-      "name": "CreateEffectOnPlaceModel_TackShooter",
+      "name": "CreateEffectOnPlaceModel_TackShooter-030",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -249,7 +227,7 @@
         "name": "SoundModel_UpgradeSound",
         "ImplementationType": null
       },
-      "name": "CreateSoundOnUpgradeModel_TackShooter",
+      "name": "CreateSoundOnUpgradeModel_TackShooter-030",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -265,15 +243,8 @@
         "name": "SoundModel_SellSound",
         "ImplementationType": null
       },
-      "name": "CreateSoundOnSellModel_TackShooter",
+      "name": "CreateSoundOnSellModel_TackShooter-030",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
-      "placeAnimation": 2,
-      "upgradeAnimation": -1,
-      "name": "PlayAnimationIndexModel_TackShooter",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PlayAnimationIndex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
@@ -297,8 +268,37 @@
         "name": "EffectModel_SellEffect",
         "ImplementationType": null
       },
-      "name": "CreateEffectOnSellModel_TackShooter",
+      "name": "CreateEffectOnSellModel_TackShooter-030",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
+      "sound1": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "432da2691e8684d4890db8228c70f225",
+          "IsValid": true,
+          "guidRef": "432da2691e8684d4890db8228c70f225"
+        },
+        "name": "SoundModel_PlaceStructureSound1",
+        "ImplementationType": null
+      },
+      "sound2": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "f6963c719015dd040a4cdd3c1aab644e",
+          "IsValid": true,
+          "guidRef": "f6963c719015dd040a4cdd3c1aab644e"
+        },
+        "name": "SoundModel_PlaceStructureSound2",
+        "ImplementationType": null
+      },
+      "heroSound1": null,
+      "heroSound2": null,
+      "name": "CreateSoundOnTowerPlaceModel_TackShooter-030",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
@@ -323,7 +323,7 @@
         "ImplementationType": null
       },
       "createOnAirUnit": false,
-      "name": "CreateEffectOnUpgradeModel_TackShooter",
+      "name": "CreateEffectOnUpgradeModel_TackShooter-030",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -346,18 +346,18 @@
           },
           "ejectX": 0.0,
           "ejectY": 0.0,
-          "ejectZ": 5.11000061,
+          "ejectZ": 7.75,
           "projectile": {
             "$type": "Assets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
             "display": {
               "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-              "GUID": "26e9c99e89180fd468cb47d76c7536b6",
+              "GUID": "73c06263b85d1354da4cf582782051b1",
               "IsValid": true,
-              "guidRef": "26e9c99e89180fd468cb47d76c7536b6"
+              "guidRef": "73c06263b85d1354da4cf582782051b1"
             },
             "id": "Projectile",
             "maxPierce": -1.0,
-            "pierce": 1.0,
+            "pierce": 8.0,
             "scale": 1.0,
             "ignoreBlockers": false,
             "usePointCollisionWithBloons": false,
@@ -389,12 +389,12 @@
               {
                 "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.TravelStraitModel, Assembly-CSharp",
                 "collisionPass": 0,
-                "Speed": 160.0,
-                "Lifespan": 0.2,
+                "Speed": 187.2,
+                "Lifespan": 0.263059825,
                 "name": "TravelStraitModel_Projectile",
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.TravelStrait, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "speed": 160.0,
-                "lifespan": 0.2
+                "speed": 187.2,
+                "lifespan": 0.263059825
               },
               {
                 "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.ProjectileFilterModel, Assembly-CSharp",
@@ -415,9 +415,9 @@
                 "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                 "display": {
                   "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-                  "GUID": "26e9c99e89180fd468cb47d76c7536b6",
+                  "GUID": "73c06263b85d1354da4cf582782051b1",
                   "IsValid": true,
-                  "guidRef": "26e9c99e89180fd468cb47d76c7536b6"
+                  "guidRef": "73c06263b85d1354da4cf582782051b1"
                 },
                 "layer": 0,
                 "positionOffset": {
@@ -451,7 +451,7 @@
             "ignoreNonTargetable": false,
             "ignorePierceExhaustion": false,
             "saveId": null,
-            "CappedPierce": 1.0,
+            "CappedPierce": 8.0,
             "name": "ProjectileModel_Projectile",
             "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Projectile, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
           },
@@ -462,12 +462,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 1.4,
+          "Rate": 1.19,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.0,
-          "rate": 1.4,
+          "rate": 1.19,
           "customStartCooldown": 0.0
         }
       ],
@@ -494,7 +494,7 @@
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Attack.Behaviors.TargetClose, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         }
       ],
-      "range": 23.0,
+      "range": 30.82,
       "targetProvider": null,
       "offsetX": 0.0,
       "offsetY": 0.0,
@@ -511,9 +511,9 @@
       "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": {
         "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-        "GUID": "bade9757946dab74ba6214cafeb152a9",
+        "GUID": "d617dc9fb4015c54a8f37c08ee3c3bb6",
         "IsValid": true,
-        "guidRef": "bade9757946dab74ba6214cafeb152a9"
+        "guidRef": "d617dc9fb4015c54a8f37c08ee3c3bb6"
       },
       "layer": -1,
       "positionOffset": {
@@ -561,21 +561,25 @@
   "upgrades": [
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "TackShooter-100",
+      "tower": "TackShooter-040",
+      "upgrade": "Blade Maelstrom"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
+      "tower": "TackShooter-130",
       "upgrade": "Faster Shooting"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "TackShooter-010",
-      "upgrade": "Long Range Tacks"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "TackShooter-001",
+      "tower": "TackShooter-031",
       "upgrade": "More Tacks"
     }
   ],
-  "appliedUpgrades": [],
+  "appliedUpgrades": [
+    "Long Range Tacks",
+    "Super Range Tacks",
+    "Blade Shooter"
+  ],
   "targetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -609,7 +613,7 @@
   "isGeraldoItem": false,
   "IsBeastHandlerPet": false,
   "BeastHandlerLeashMutationId": "BeastHandlerContributionTackShooter",
-  "IsBaseTower": true,
+  "IsBaseTower": false,
   "TargetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -620,6 +624,6 @@
     }
   ],
   "IsExclusivelyWaterBased": false,
-  "name": "TackShooter",
+  "name": "TackShooter-030",
   "ImplementationType": "Assets.Scripts.Simulation.Towers.Tower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
 }
