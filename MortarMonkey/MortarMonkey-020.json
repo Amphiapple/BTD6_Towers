@@ -2,9 +2,9 @@
   "$type": "Assets.Scripts.Models.Towers.TowerModel, Assembly-CSharp",
   "display": {
     "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-    "GUID": "a2c4aa09f87dbc545978adb34e445dcc",
+    "GUID": "bf72875d71fc8bc458ea2bd33ce6d1f8",
     "IsValid": true,
-    "guidRef": "a2c4aa09f87dbc545978adb34e445dcc"
+    "guidRef": "bf72875d71fc8bc458ea2bd33ce6d1f8"
   },
   "baseId": "MortarMonkey",
   "cost": 750.0,
@@ -13,10 +13,10 @@
   "range": 30.0,
   "ignoreBlockers": true,
   "isGlobalRange": false,
-  "tier": 0,
+  "tier": 2,
   "tiers": [
     0,
-    0,
+    2,
     0
   ],
   "towerSet": 2,
@@ -28,15 +28,15 @@
   },
   "portrait": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "ea9866c34e208b145ae5d9afea32585c",
+    "GUID": "9b47156ef0e9d384ba558b36a37483c8",
     "IsValid": true,
-    "guidRef": "ea9866c34e208b145ae5d9afea32585c"
+    "guidRef": "9b47156ef0e9d384ba558b36a37483c8"
   },
   "instaIcon": {
     "$type": "Assets.Scripts.Utils.SpriteReference, Assembly-CSharp",
-    "GUID": "0c6ee000773934b1c8b57d04f323ce74",
+    "GUID": "dd5733746c1c54fa5802fd519a642b18",
     "IsValid": true,
-    "guidRef": "0c6ee000773934b1c8b57d04f323ce74"
+    "guidRef": "dd5733746c1c54fa5802fd519a642b18"
   },
   "areaTypes": [
     2
@@ -74,6 +74,96 @@
   "ignoreTowerForSelection": false,
   "behaviors": [
     {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
+      "effectModel": {
+        "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
+          "GUID": "b1dec8a8d79593843bc2e2410eae944e",
+          "IsValid": true,
+          "guidRef": "b1dec8a8d79593843bc2e2410eae944e"
+        },
+        "scale": 1.0,
+        "lifespan": 1.0,
+        "fullscreen": 0,
+        "useCenterPosition": false,
+        "useTransformPosition": false,
+        "useTransfromRotation": false,
+        "destroyOnTransformDestroy": false,
+        "alwaysUseAge": false,
+        "useRoundTime": false,
+        "name": "EffectModel_SellEffect",
+        "ImplementationType": null
+      },
+      "name": "CreateEffectOnSellModel_MortarMonkey-020",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
+      "effectModel": {
+        "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
+          "GUID": "d2bcad0f16bb76e408a107e13b2c0da3",
+          "IsValid": true,
+          "guidRef": "d2bcad0f16bb76e408a107e13b2c0da3"
+        },
+        "scale": 1.0,
+        "lifespan": 6.0,
+        "fullscreen": 0,
+        "useCenterPosition": false,
+        "useTransformPosition": false,
+        "useTransfromRotation": false,
+        "destroyOnTransformDestroy": false,
+        "alwaysUseAge": false,
+        "useRoundTime": false,
+        "name": "EffectModel_PlacementEffect",
+        "ImplementationType": null
+      },
+      "name": "CreateEffectOnPlaceModel_MortarMonkey-020",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
+      "sound": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "23a777b9950195f4f8f4bf745ef84031",
+          "IsValid": true,
+          "guidRef": "23a777b9950195f4f8f4bf745ef84031"
+        },
+        "name": "SoundModel_UpgradeSound",
+        "ImplementationType": null
+      },
+      "sound1": null,
+      "sound2": null,
+      "sound3": null,
+      "sound4": null,
+      "sound5": null,
+      "sound6": null,
+      "sound7": null,
+      "sound8": null,
+      "name": "CreateSoundOnUpgradeModel_MortarMonkey-020",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
+      "sound": {
+        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
+        "assetId": {
+          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
+          "GUID": "df4c691ccf8a3c7408ed6f156740c8b7",
+          "IsValid": true,
+          "guidRef": "df4c691ccf8a3c7408ed6f156740c8b7"
+        },
+        "name": "SoundModel_SellSound",
+        "ImplementationType": null
+      },
+      "name": "CreateSoundOnSellModel_MortarMonkey-020",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnTowerPlaceModel, Assembly-CSharp",
       "sound1": {
         "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
@@ -99,105 +189,8 @@
       },
       "heroSound1": null,
       "heroSound2": null,
-      "name": "CreateSoundOnTowerPlaceModel_MortarMonkey",
+      "name": "CreateSoundOnTowerPlaceModel_MortarMonkey-020",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnSellModel, Assembly-CSharp",
-      "effectModel": {
-        "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-          "GUID": "b1dec8a8d79593843bc2e2410eae944e",
-          "IsValid": true,
-          "guidRef": "b1dec8a8d79593843bc2e2410eae944e"
-        },
-        "scale": 1.0,
-        "lifespan": 1.0,
-        "fullscreen": 0,
-        "useCenterPosition": false,
-        "useTransformPosition": false,
-        "useTransfromRotation": false,
-        "destroyOnTransformDestroy": false,
-        "alwaysUseAge": false,
-        "useRoundTime": false,
-        "name": "EffectModel_SellEffect",
-        "ImplementationType": null
-      },
-      "name": "CreateEffectOnSellModel_MortarMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnPlaceModel, Assembly-CSharp",
-      "effectModel": {
-        "$type": "Assets.Scripts.Models.Effects.EffectModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-          "GUID": "d2bcad0f16bb76e408a107e13b2c0da3",
-          "IsValid": true,
-          "guidRef": "d2bcad0f16bb76e408a107e13b2c0da3"
-        },
-        "scale": 1.0,
-        "lifespan": 6.0,
-        "fullscreen": 0,
-        "useCenterPosition": false,
-        "useTransformPosition": false,
-        "useTransfromRotation": false,
-        "destroyOnTransformDestroy": false,
-        "alwaysUseAge": false,
-        "useRoundTime": false,
-        "name": "EffectModel_PlacementEffect",
-        "ImplementationType": null
-      },
-      "name": "CreateEffectOnPlaceModel_MortarMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnUpgradeModel, Assembly-CSharp",
-      "sound": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "23a777b9950195f4f8f4bf745ef84031",
-          "IsValid": true,
-          "guidRef": "23a777b9950195f4f8f4bf745ef84031"
-        },
-        "name": "SoundModel_UpgradeSound",
-        "ImplementationType": null
-      },
-      "sound1": null,
-      "sound2": null,
-      "sound3": null,
-      "sound4": null,
-      "sound5": null,
-      "sound6": null,
-      "sound7": null,
-      "sound8": null,
-      "name": "CreateSoundOnUpgradeModel_MortarMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateSoundOnSellModel, Assembly-CSharp",
-      "sound": {
-        "$type": "Assets.Scripts.Models.Audio.SoundModel, Assembly-CSharp",
-        "assetId": {
-          "$type": "Assets.Scripts.Utils.AudioSourceReference, Assembly-CSharp",
-          "GUID": "df4c691ccf8a3c7408ed6f156740c8b7",
-          "IsValid": true,
-          "guidRef": "df4c691ccf8a3c7408ed6f156740c8b7"
-        },
-        "name": "SoundModel_SellSound",
-        "ImplementationType": null
-      },
-      "name": "CreateSoundOnSellModel_MortarMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnSell, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.PlayAnimationIndexModel, Assembly-CSharp",
-      "placeAnimation": 2,
-      "upgradeAnimation": -1,
-      "name": "PlayAnimationIndexModel_MortarMonkey",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.PlayAnimationIndex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.CreateEffectOnUpgradeModel, Assembly-CSharp",
@@ -222,7 +215,7 @@
         "ImplementationType": null
       },
       "createOnAirUnit": false,
-      "name": "CreateEffectOnUpgradeModel_MortarMonkey",
+      "name": "CreateEffectOnUpgradeModel_MortarMonkey-020",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateEffectOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
@@ -693,12 +686,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.08,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.05,
-          "rate": 2.0,
+          "rate": 1.08,
           "customStartCooldown": 0.0
         }
       ],
@@ -797,9 +790,9 @@
       "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
       "display": {
         "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
-        "GUID": "a2c4aa09f87dbc545978adb34e445dcc",
+        "GUID": "bf72875d71fc8bc458ea2bd33ce6d1f8",
         "IsValid": true,
-        "guidRef": "a2c4aa09f87dbc545978adb34e445dcc"
+        "guidRef": "bf72875d71fc8bc458ea2bd33ce6d1f8"
       },
       "layer": -1,
       "positionOffset": {
@@ -847,21 +840,24 @@
   "upgrades": [
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "MortarMonkey-100",
-      "upgrade": "Bigger Blast"
+      "tower": "MortarMonkey-030",
+      "upgrade": "Heavy Shells"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "MortarMonkey-001",
+      "tower": "MortarMonkey-021",
       "upgrade": "Increased Accuracy"
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Upgrades.UpgradePathModel, Assembly-CSharp",
-      "tower": "MortarMonkey-010",
-      "upgrade": "Mortar Faster Reload"
+      "tower": "MortarMonkey-120",
+      "upgrade": "Bigger Blast"
     }
   ],
-  "appliedUpgrades": [],
+  "appliedUpgrades": [
+    "Mortar Faster Reload",
+    "Mortar Rapid Reload"
+  ],
   "targetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -895,7 +891,7 @@
   "isGeraldoItem": false,
   "IsBeastHandlerPet": false,
   "BeastHandlerLeashMutationId": "BeastHandlerContributionMortarMonkey",
-  "IsBaseTower": true,
+  "IsBaseTower": false,
   "TargetTypes": [
     {
       "$type": "Assets.Scripts.Models.Towers.TargetType, Assembly-CSharp",
@@ -906,6 +902,6 @@
     }
   ],
   "IsExclusivelyWaterBased": false,
-  "name": "MortarMonkey",
+  "name": "MortarMonkey-020",
   "ImplementationType": "Assets.Scripts.Simulation.Towers.Tower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
 }
