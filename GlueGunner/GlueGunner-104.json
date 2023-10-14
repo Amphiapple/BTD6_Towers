@@ -574,7 +574,14 @@
                         },
                         {
                           "$type": "Assets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
-                          "tag": "Bfb,Zomg",
+                          "tag": "Bfb",
+                          "disableWhenSupportMutatorIDs": [],
+                          "name": "FilterOutTagModel_SplatOnPop",
+                          "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterOutTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        {
+                          "$type": "Assets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                          "tag": "Zomg",
                           "disableWhenSupportMutatorIDs": [],
                           "name": "FilterOutTagModel_SplatOnPop",
                           "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterOutTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -647,7 +654,14 @@
                             },
                             {
                               "$type": "Assets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
-                              "tag": "Bfb,Zomg",
+                              "tag": "Bfb",
+                              "disableWhenSupportMutatorIDs": [],
+                              "name": "FilterOutTagModel_SplatOnPop",
+                              "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterOutTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                            },
+                            {
+                              "$type": "Assets.Scripts.Models.Towers.Filters.FilterOutTagModel, Assembly-CSharp",
+                              "tag": "Zomg",
                               "disableWhenSupportMutatorIDs": [],
                               "name": "FilterOutTagModel_SplatOnPop",
                               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterOutTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -659,7 +673,7 @@
                         },
                         {
                           "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.SlowModifierForTagModel, Assembly-CSharp",
-                          "tag": "Moab,Ddt",
+                          "tag": "Moab",
                           "slowId": "Stun:Weak",
                           "slowMultiplier": 1.0,
                           "resetToUnmodified": false,
@@ -668,6 +682,19 @@
                           "makeNotTag": false,
                           "collisionPass": 0,
                           "name": "SlowModifierForTagModel_moabStun",
+                          "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.SlowModifierForTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        {
+                          "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.SlowModifierForTagModel, Assembly-CSharp",
+                          "tag": "Ddt",
+                          "slowId": "Stun:Weak",
+                          "slowMultiplier": 1.0,
+                          "resetToUnmodified": false,
+                          "preventMutation": false,
+                          "lifespanOverride": 0.25,
+                          "makeNotTag": false,
+                          "collisionPass": 0,
+                          "name": "SlowModifierForTagModel_ddtStun",
                           "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.SlowModifierForTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                         },
                         {
@@ -683,11 +710,7 @@
                             "$type": "Assets.Scripts.Simulation.SMath.Vector3, Assembly-CSharp",
                             "x": 0.0,
                             "y": 0.0,
-                            "z": 0.0,
-                            "MagnitudeSquared": 0.0,
-                            "Magnitude": 0.0,
-                            "Rotation": 0.0,
-                            "SimToDispRotation": 180.0
+                            "z": 0.0
                           },
                           "scale": 1.0,
                           "ignoreRotation": false,
@@ -804,11 +827,7 @@
                   "$type": "Assets.Scripts.Simulation.SMath.Vector3, Assembly-CSharp",
                   "x": 0.0,
                   "y": 0.0,
-                  "z": 0.0,
-                  "MagnitudeSquared": 0.0,
-                  "Magnitude": 0.0,
-                  "Rotation": 0.0,
-                  "SimToDispRotation": 180.0
+                  "z": 0.0
                 },
                 "scale": 1.0,
                 "ignoreRotation": false,
@@ -947,11 +966,7 @@
         "$type": "Assets.Scripts.Simulation.SMath.Vector3, Assembly-CSharp",
         "x": 0.0,
         "y": 0.0,
-        "z": 0.0,
-        "MagnitudeSquared": 0.0,
-        "Magnitude": 0.0,
-        "Rotation": 0.0,
-        "SimToDispRotation": 180.0
+        "z": 0.0
       },
       "scale": 1.0,
       "ignoreRotation": false,
@@ -1041,6 +1056,12 @@
   "showPowerTowerBuffs": false,
   "animationSpeed": 1.0,
   "towerSelectionMenuThemeId": "Default",
+  "secondarySelectionMenu": {
+    "$type": "Assets.Scripts.Utils.PrefabReference, Assembly-CSharp",
+    "GUID": null,
+    "IsValid": false,
+    "guidRef": null
+  },
   "ignoreCoopAreas": false,
   "canAlwaysBeSold": false,
   "blockSelling": false,
