@@ -226,6 +226,34 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.CreateSoundOnTowerPlace, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.RemoveMutatorOnUpgradeModel, Assembly-CSharp",
+      "mutatorId": "Turbo",
+      "firstPath": -1,
+      "secondPath": 5,
+      "thirdPath": -1,
+      "paths": [
+        -1,
+        5,
+        -1
+      ],
+      "name": "RemoveMutatorOnUpgradeModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.RemoveMutatorOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "$type": "Assets.Scripts.Models.Towers.Behaviors.RemoveMutatorOnUpgradeModel, Assembly-CSharp",
+      "mutatorId": "Turbo",
+      "firstPath": -1,
+      "secondPath": 5,
+      "thirdPath": -1,
+      "paths": [
+        -1,
+        5,
+        -1
+      ],
+      "name": "RemoveMutatorOnUpgradeModel_",
+      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.RemoveMutatorOnUpgrade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.Attack.AttackModel, Assembly-CSharp",
       "weapons": [
         {
@@ -360,6 +388,7 @@
                       "createPopEffect": false,
                       "immuneBloonProperties": 0,
                       "immuneBloonPropertiesOriginal": 0,
+                      "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 2.0,
                       "name": "DamageModel_Explosion_",
@@ -494,7 +523,7 @@
                         "Stun"
                       ],
                       "damageMultiplier": 1.0,
-                      "damageAdditive": 10.0,
+                      "damageAdditive": 8.0,
                       "mustIncludeAllStates": false,
                       "applyOverMaxDamage": false,
                       "mustBeModified": true,
@@ -510,7 +539,7 @@
                         "Boss"
                       ],
                       "damageMultiplier": 1.0,
-                      "damageAddative": 10.0,
+                      "damageAddative": 6.0,
                       "mustIncludeAllTags": false,
                       "applyOverMaxDamage": false,
                       "collisionPass": 0,
@@ -566,6 +595,7 @@
                       "animationChanges": null,
                       "delayedReveal": 0.0,
                       "category": 16,
+                      "isAnimationPaused": false,
                       "name": "DisplayModel_ProjectileDisplay",
                       "ImplementationType": "Assets.Scripts.Simulation.Behaviors.DisplayBehavior, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     }
@@ -735,6 +765,7 @@
                 "animationChanges": null,
                 "delayedReveal": 0.0,
                 "category": 16,
+                "isAnimationPaused": false,
                 "name": "DisplayModel_ProjectileDisplay",
                 "ImplementationType": "Assets.Scripts.Simulation.Behaviors.DisplayBehavior, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               }
@@ -1002,6 +1033,7 @@
                         "createPopEffect": false,
                         "immuneBloonProperties": 0,
                         "immuneBloonPropertiesOriginal": 0,
+                        "ignoreImmunityDestroy": false,
                         "collisionPass": 0,
                         "CappedDamage": 20.0,
                         "name": "DamageModel_Projectile_",
@@ -1052,6 +1084,7 @@
                         "animationChanges": null,
                         "delayedReveal": 0.0,
                         "category": 16,
+                        "isAnimationPaused": false,
                         "name": "DisplayModel_ProjectileDisplay",
                         "ImplementationType": "Assets.Scripts.Simulation.Behaviors.DisplayBehavior, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       }
@@ -1289,6 +1322,7 @@
       "animationChanges": null,
       "delayedReveal": 0.0,
       "category": 4,
+      "isAnimationPaused": false,
       "name": "DisplayModel_TowerDisplay",
       "ImplementationType": "Assets.Scripts.Simulation.Behaviors.DisplayBehavior, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
