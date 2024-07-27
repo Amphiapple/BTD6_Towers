@@ -781,7 +781,7 @@
                   },
                   "pierceInterval": 1.0,
                   "count": 9999999,
-                  "minimumTimeDifferenceInFrames": 7,
+                  "minimumTimeDifferenceInFrames": 9,
                   "destroyProjectile": true,
                   "assetId": {
                     "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",
@@ -1541,12 +1541,12 @@
             "distance": 50.0,
             "tolerance": 1.41,
             "acceleration": 10.0,
-            "accelerationPerFrame": 0.199999988,
+            "accelerationPerFrame": 0.166666672,
             "speed": 1.0,
             "minSpeed": 20.0,
-            "minSpeedPerFrame": 0.399999976,
+            "minSpeedPerFrame": 0.333333343,
             "maxSpeed": 125.0,
-            "maxSpeedPerFrame": 2.5,
+            "maxSpeedPerFrame": 2.08333349,
             "rotation": 9.0,
             "accelerateInAngle": 10.0,
             "startDeceleratingIfAngleGreaterThan": 25.0,
@@ -1693,7 +1693,7 @@
                       "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollideModel, Assembly-CSharp",
                       "animationState": 3,
                       "minTimeBetween": 0.25,
-                      "minTimeBetweenFrames": 12,
+                      "minTimeBetweenFrames": 14,
                       "collisionPass": 0,
                       "name": "AnimateParentTowerOnCollideModel_MainProjectile",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollide, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -1854,7 +1854,7 @@
                           "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollideModel, Assembly-CSharp",
                           "animationState": 3,
                           "minTimeBetween": 0.25,
-                          "minTimeBetweenFrames": 12,
+                          "minTimeBetweenFrames": 14,
                           "collisionPass": 0,
                           "name": "AnimateParentTowerOnCollideModel_MainProjectile",
                           "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollide, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -2389,7 +2389,7 @@
                       },
                       "pierceInterval": 1.0,
                       "count": 9999999,
-                      "minimumTimeDifferenceInFrames": 7,
+                      "minimumTimeDifferenceInFrames": 9,
                       "destroyProjectile": true,
                       "assetId": {
                         "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",
@@ -3182,7 +3182,7 @@
     {
       "$type": "Assets.Scripts.Models.CorvusSpells.Instant.TrampleModel, Assembly-CSharp",
       "speedBonus": -25.0,
-      "speedBonusFrames": -0.5,
+      "speedBonusFrames": -0.4166667,
       "projectileModel": {
         "$type": "Assets.Scripts.Models.Towers.Projectiles.ProjectileModel, Assembly-CSharp",
         "display": {
@@ -5149,12 +5149,12 @@
             "distance": 50.0,
             "tolerance": 1.41,
             "acceleration": 10.0,
-            "accelerationPerFrame": 0.199999988,
+            "accelerationPerFrame": 0.166666672,
             "speed": 1.0,
             "minSpeed": 20.0,
-            "minSpeedPerFrame": 0.399999976,
+            "minSpeedPerFrame": 0.333333343,
             "maxSpeed": 125.0,
-            "maxSpeedPerFrame": 2.5,
+            "maxSpeedPerFrame": 2.08333349,
             "rotation": 9.0,
             "accelerateInAngle": 10.0,
             "startDeceleratingIfAngleGreaterThan": 25.0,
@@ -5301,7 +5301,7 @@
                       "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollideModel, Assembly-CSharp",
                       "animationState": 3,
                       "minTimeBetween": 0.25,
-                      "minTimeBetweenFrames": 12,
+                      "minTimeBetweenFrames": 14,
                       "collisionPass": 0,
                       "name": "AnimateParentTowerOnCollideModel_MainProjectile",
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollide, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -5462,7 +5462,7 @@
                           "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollideModel, Assembly-CSharp",
                           "animationState": 3,
                           "minTimeBetween": 0.25,
-                          "minTimeBetweenFrames": 12,
+                          "minTimeBetweenFrames": 14,
                           "collisionPass": 0,
                           "name": "AnimateParentTowerOnCollideModel_MainProjectile",
                           "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.AnimateParentTowerOnCollide, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -5997,7 +5997,7 @@
                       },
                       "pierceInterval": 1.0,
                       "count": 9999999,
-                      "minimumTimeDifferenceInFrames": 7,
+                      "minimumTimeDifferenceInFrames": 9,
                       "destroyProjectile": true,
                       "assetId": {
                         "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",

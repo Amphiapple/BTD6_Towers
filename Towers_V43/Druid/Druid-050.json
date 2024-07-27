@@ -512,7 +512,7 @@
       "offsetMax": 1.0,
       "circleRadius": 360.0,
       "generateRadius": 6.0,
-      "amountPerFrame": 0.06,
+      "amountPerFrame": 0.05,
       "minScale": 0.0,
       "maxScale": 1.0,
       "scaleTime": 0.5,

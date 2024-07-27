@@ -992,7 +992,7 @@
         },
         {
           "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.DamageUpModel, Assembly-CSharp",
-          "lifespanFrames": 750,
+          "lifespanFrames": 900,
           "additionalDamage": 10,
           "projectileDisplay": {
             "$type": "Assets.Scripts.Models.Effects.AssetPathModel, Assembly-CSharp",

@@ -1685,7 +1685,7 @@
                 },
                 "pierceInterval": 1.0,
                 "count": 5,
-                "minimumTimeDifferenceInFrames": 5,
+                "minimumTimeDifferenceInFrames": 6,
                 "destroyProjectile": true,
                 "assetId": {
                   "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",

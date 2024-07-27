@@ -740,7 +740,7 @@
               "fieldOfView": 90.0,
               "baseTowerRotationOffset": -90.0,
               "shareFilterTargets": true,
-              "minTimeBetweenFilterTargetsFrames": 62,
+              "minTimeBetweenFilterTargetsFrames": 75,
               "name": "FilterTargetAngleFilterModel_",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Behaviors.FilterTargetAngleFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -1701,7 +1701,7 @@
               "fieldOfView": 75.0,
               "baseTowerRotationOffset": -90.0,
               "shareFilterTargets": true,
-              "minTimeBetweenFilterTargetsFrames": 57,
+              "minTimeBetweenFilterTargetsFrames": 68,
               "name": "FilterTargetAngleFilterModel_",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Behaviors.FilterTargetAngleFilter, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }

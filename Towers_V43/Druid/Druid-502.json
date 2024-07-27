@@ -779,7 +779,7 @@
                   "name": "SingleEmissionModel_",
                   "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                 },
-                "intervalFrames": 17,
+                "intervalFrames": 21,
                 "onlyIfHasTarget": true,
                 "range": 43.0,
                 "targetType": {
@@ -1449,7 +1449,7 @@
                         "name": "SingleEmissionModel_",
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                       },
-                      "intervalFrames": 17,
+                      "intervalFrames": 21,
                       "onlyIfHasTarget": true,
                       "range": 43.0,
                       "targetType": {
@@ -1564,7 +1564,7 @@
                   "name": "RandomEmissionModel_",
                   "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.RandomEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                 },
-                "intervalFrames": 50,
+                "intervalFrames": 60,
                 "onlyIfHasTarget": false,
                 "range": 0.0,
                 "targetType": {

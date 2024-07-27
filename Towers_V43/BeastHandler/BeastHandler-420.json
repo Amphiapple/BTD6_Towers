@@ -1055,7 +1055,7 @@
                                     "name": "SingleEmissionModel_",
                                     "ImplementationType": "Assets.Scripts.Simulation.Towers.Emissions.SingleEmission, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   },
-                                  "intervalFrames": 15,
+                                  "intervalFrames": 18,
                                   "onlyIfHasTarget": false,
                                   "range": 0.0,
                                   "targetType": {
@@ -1105,7 +1105,7 @@
                                   "animationStateOnSetTarget": 4,
                                   "animationStateOnTowerOnDestroy": 7,
                                   "postBloonDestroyTime": 1.1,
-                                  "postBloonDestroyTimeFrames": 55,
+                                  "postBloonDestroyTimeFrames": 65,
                                   "bloonSpeedMultiplier": 0.6,
                                   "collisionPass": 0,
                                   "SlowMutator": {

@@ -1482,8 +1482,8 @@
         "ImplementationType": "Assets.Scripts.Simulation.Towers.Tower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
       },
       "reinforcementCount": 3,
-      "durationFrames": 750,
-      "cooldownFrames": 1250,
+      "durationFrames": 900,
+      "cooldownFrames": 1500,
       "maxActivationsPerRound": 2,
       "immediate": false,
       "sound": {

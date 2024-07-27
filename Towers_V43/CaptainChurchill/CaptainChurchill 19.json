@@ -766,7 +766,7 @@
                 },
                 "pierceInterval": 1.0,
                 "count": 7,
-                "minimumTimeDifferenceInFrames": 2,
+                "minimumTimeDifferenceInFrames": 3,
                 "destroyProjectile": true,
                 "assetId": {
                   "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",
@@ -1378,14 +1378,14 @@
       "behaviors": [
         {
           "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.ChangeDamageTypeModel, Assembly-CSharp",
-          "lifespanFrames": 850,
+          "lifespanFrames": 1020,
           "immuneBloonProperties": 0,
           "name": "ChangeDamageTypeModel_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Behaviors.ChangeDamageType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
           "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.MutateProjectileOnAbilityModel, Assembly-CSharp",
-          "lifespanFrames": 850,
+          "lifespanFrames": 1020,
           "mutatorId": "ArmorPiercingShellsMoab",
           "damageIncrease": 0,
           "projectileBehaviorModel": {
@@ -1538,7 +1538,7 @@
         },
         {
           "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.MutateProjectileOnAbilityModel, Assembly-CSharp",
-          "lifespanFrames": 850,
+          "lifespanFrames": 1020,
           "mutatorId": "ArmorPiercingShellsCeramic",
           "damageIncrease": 2,
           "projectileBehaviorModel": {
@@ -1869,7 +1869,7 @@
                 },
                 "pierceInterval": 1.0,
                 "count": 3,
-                "minimumTimeDifferenceInFrames": 2,
+                "minimumTimeDifferenceInFrames": 3,
                 "destroyProjectile": true,
                 "assetId": {
                   "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",
@@ -2057,7 +2057,7 @@
         },
         {
           "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.MutateCreateProjectileOnExhaustPierceOnAbilityModel, Assembly-CSharp",
-          "lifespanFrames": 850,
+          "lifespanFrames": 1020,
           "countIncrease": 2,
           "targetCPOEPId": "CreateProjectileOnExhaustPierceModel_MainProjectileCPOEP",
           "name": "MutateCreateProjectileOnExhaustPierceOnAbilityModel_",
@@ -2100,7 +2100,7 @@
       "behaviors": [
         {
           "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors.MoabBarrageModel, Assembly-CSharp",
-          "durationFrames": 440,
+          "durationFrames": 528,
           "damageOverTimeModel": {
             "$type": "Assets.Scripts.Models.Bloons.Behaviors.MoabBarrageBloonBehaviorModel, Assembly-CSharp",
             "damage": 200,

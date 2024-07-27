@@ -329,7 +329,7 @@
               },
               {
                 "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.TrackTargetWithinTimeModel, Assembly-CSharp",
-                "timeInFrames": 2.89999986,
+                "timeInFrames": 3.48,
                 "distance": 9999999.0,
                 "trackNewTargets": true,
                 "constantlyAquireNewTarget": false,

@@ -2150,7 +2150,7 @@
               "$type": "Assets.Scripts.Models.Towers.Weapons.Behaviors.LimitProjectileModel, Assembly-CSharp",
               "projectileId": "Collidable",
               "limit": 1,
-              "delayInFrames": 139,
+              "delayInFrames": 167,
               "limitByDestroyedPriorProjectile": false,
               "globalForPlayer": false,
               "name": "LimitProjectileModel_",
