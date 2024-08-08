@@ -774,8 +774,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -949,6 +949,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 22.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -1159,8 +1160,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -1334,6 +1335,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 67.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -1544,8 +1546,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -1719,6 +1721,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 112.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -1929,8 +1932,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -2104,6 +2107,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 157.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -2314,8 +2318,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -2489,6 +2493,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 202.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -2699,8 +2704,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -2874,6 +2879,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 247.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -3084,8 +3090,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -3259,6 +3265,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 292.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -3469,8 +3476,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 9.0,
@@ -3644,6 +3651,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 337.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }

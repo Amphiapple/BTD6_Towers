@@ -1558,6 +1558,7 @@
                               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
                               "fieldOfView": 60.0,
                               "baseTowerRotationOffset": 0.0,
+                              "ignoreTowerRotation": false,
                               "name": "",
                               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                             },
