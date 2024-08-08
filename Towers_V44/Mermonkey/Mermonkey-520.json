@@ -597,7 +597,7 @@
                       "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.SlowModifierForTagModel, Assembly-CSharp",
                       "tag": "Moabs",
                       "slowId": "SlowInk",
-                      "slowMultiplier": 0.9,
+                      "slowMultiplier": 1.125,
                       "resetToUnmodified": false,
                       "preventMutation": false,
                       "lifespanOverride": 0.0,
@@ -943,8 +943,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -1094,12 +1094,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -1118,6 +1118,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 22.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -1328,8 +1329,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -1479,12 +1480,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -1503,6 +1504,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 67.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -1713,8 +1715,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -1864,12 +1866,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -1888,6 +1890,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 112.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -2098,8 +2101,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -2249,12 +2252,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -2273,6 +2276,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 157.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -2483,8 +2487,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -2634,12 +2638,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -2658,6 +2662,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 202.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -2868,8 +2873,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -3019,12 +3024,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -3043,6 +3048,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 247.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -3253,8 +3259,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -3404,12 +3410,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -3428,6 +3434,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 292.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }
@@ -3638,8 +3645,8 @@
                       "distributeToChildren": true,
                       "overrideDistributeBlocker": false,
                       "createPopEffect": true,
-                      "immuneBloonProperties": 17,
-                      "immuneBloonPropertiesOriginal": 17,
+                      "immuneBloonProperties": 1,
+                      "immuneBloonPropertiesOriginal": 1,
                       "ignoreImmunityDestroy": false,
                       "collisionPass": 0,
                       "CappedDamage": 50.0,
@@ -3789,12 +3796,12 @@
           "startInCooldown": false,
           "animateOnMainAttack": false,
           "isStunned": false,
-          "Rate": 2.0,
+          "Rate": 1.5,
           "UseThrowMarker": true,
           "name": "WeaponModel_Weapon",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Weapons.Weapon, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
           "animationOffset": 0.1,
-          "rate": 2.0,
+          "rate": 1.5,
           "customStartCooldown": 0.0
         }
       ],
@@ -3813,6 +3820,7 @@
               "$type": "Assets.Scripts.Models.Towers.Filters.FilterTargetAngleModel, Assembly-CSharp",
               "fieldOfView": 45.0,
               "baseTowerRotationOffset": 337.5,
+              "ignoreTowerRotation": true,
               "name": "",
               "ImplementationType": "Assets.Scripts.Simulation.Towers.Filters.FilterTargetAngle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             }

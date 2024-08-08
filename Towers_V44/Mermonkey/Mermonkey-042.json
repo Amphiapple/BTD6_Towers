@@ -579,6 +579,79 @@
                       "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.DamageModifierForTag, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                     },
                     {
+                      "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.FreezeModel, Assembly-CSharp",
+                      "speed": 0.0,
+                      "layers": 9999999,
+                      "mutationId": "Ice: MermonkeyFreeze",
+                      "percentChanceToFreeze": 0.0,
+                      "enablePercentChanceToFreeze": false,
+                      "damageModel": {
+                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                        "damage": 6.0,
+                        "maxDamage": 0.0,
+                        "distributeToChildren": true,
+                        "overrideDistributeBlocker": false,
+                        "createPopEffect": true,
+                        "immuneBloonProperties": 8,
+                        "immuneBloonPropertiesOriginal": 8,
+                        "ignoreImmunityDestroy": false,
+                        "collisionPass": 0,
+                        "CappedDamage": 6.0,
+                        "name": "DamageModel_SplitProjectile_",
+                        "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Damage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                      },
+                      "canFreezeMoabs": false,
+                      "cascadeMutators": false,
+                      "growBlockModel": {
+                        "$type": "Assets.Scripts.Models.Bloons.Behaviors.GrowBlockModel, Assembly-CSharp",
+                        "name": "GrowBlockModel_FreezeGrowBlock",
+                        "ImplementationType": "Assets.Scripts.Simulation.Bloons.Behaviors.GrowBlock, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                      },
+                      "applyAfterDamage": true,
+                      "overlayType": "Ice",
+                      "collisionPass": 1,
+                      "Lifespan": 0.3,
+                      "mutator": {
+                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.FreezeModel+Mutator, Assembly-CSharp",
+                        "speed": 0.0,
+                        "overlayType": "Ice",
+                        "mutationId": "Ice: MermonkeyFreeze",
+                        "growBlockModel": {
+                          "$type": "Assets.Scripts.Models.Bloons.Behaviors.GrowBlockModel, Assembly-CSharp",
+                          "name": "GrowBlockModel_FreezeGrowBlock",
+                          "ImplementationType": "Assets.Scripts.Simulation.Bloons.Behaviors.GrowBlock, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "damageModel": {
+                          "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.DamageModel, Assembly-CSharp",
+                          "damage": 6.0,
+                          "maxDamage": 0.0,
+                          "distributeToChildren": true,
+                          "overrideDistributeBlocker": false,
+                          "createPopEffect": true,
+                          "immuneBloonProperties": 8,
+                          "immuneBloonPropertiesOriginal": 8,
+                          "ignoreImmunityDestroy": false,
+                          "collisionPass": 0,
+                          "CappedDamage": 6.0,
+                          "name": "DamageModel_SplitProjectile_",
+                          "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Damage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "canFreezeMoabs": false,
+                        "id": "Ice: MermonkeyFreeze",
+                        "isExclusiveInMutationList": false,
+                        "priority": 5,
+                        "glueLevel": 0,
+                        "dontCopy": false,
+                        "buffIndicator": null,
+                        "saveId": null,
+                        "isAreaBuff": false,
+                        "isGeraldoBuff": false
+                      },
+                      "name": "FreezeModel_",
+                      "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Freeze, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                      "lifespan": 0.3
+                    },
+                    {
                       "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
                       "display": {
                         "$type": "NinjaKiwi.Common.ResourceUtils.PrefabReference, NinjaKiwi.Common",
@@ -603,7 +676,8 @@
                     }
                   ],
                   "collisionPasses": [
-                    0
+                    0,
+                    1
                   ],
                   "canCollideWithBloons": true,
                   "radius": 1.0,
@@ -985,8 +1059,8 @@
                         "distributeToChildren": false,
                         "overrideDistributeBlocker": false,
                         "createPopEffect": false,
-                        "immuneBloonProperties": 1,
-                        "immuneBloonPropertiesOriginal": 1,
+                        "immuneBloonProperties": 8,
+                        "immuneBloonPropertiesOriginal": 8,
                         "ignoreImmunityDestroy": false,
                         "collisionPass": 0,
                         "CappedDamage": 15.0,
@@ -1040,8 +1114,8 @@
                           "distributeToChildren": false,
                           "overrideDistributeBlocker": false,
                           "createPopEffect": false,
-                          "immuneBloonProperties": 1,
-                          "immuneBloonPropertiesOriginal": 1,
+                          "immuneBloonProperties": 8,
+                          "immuneBloonPropertiesOriginal": 8,
                           "ignoreImmunityDestroy": false,
                           "collisionPass": 0,
                           "CappedDamage": 15.0,
@@ -1076,8 +1150,8 @@
                             "distributeToChildren": false,
                             "overrideDistributeBlocker": false,
                             "createPopEffect": false,
-                            "immuneBloonProperties": 1,
-                            "immuneBloonPropertiesOriginal": 1,
+                            "immuneBloonProperties": 8,
+                            "immuneBloonPropertiesOriginal": 8,
                             "ignoreImmunityDestroy": false,
                             "collisionPass": 0,
                             "CappedDamage": 15.0,
@@ -1098,6 +1172,17 @@
                         "name": "FreezeModel_Ice",
                         "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Freeze, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                         "lifespan": 3.0
+                      },
+                      {
+                        "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.AgeModel, Assembly-CSharp",
+                        "rounds": 0,
+                        "useRoundTime": false,
+                        "endOfRoundClearBypassModel": null,
+                        "collisionPass": 0,
+                        "Lifespan": 15.0,
+                        "name": "AgeModel_Projectile",
+                        "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.Age, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                        "lifespan": 15.0
                       },
                       {
                         "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",

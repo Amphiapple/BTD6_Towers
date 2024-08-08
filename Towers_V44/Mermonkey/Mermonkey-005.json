@@ -313,7 +313,7 @@
           0,
           0
         ],
-        "towerSet": 0,
+        "towerSet": 4,
         "icon": {
           "$type": "NinjaKiwi.Common.ResourceUtils.SpriteReference, NinjaKiwi.Common",
           "GUID": null,
