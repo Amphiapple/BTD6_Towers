@@ -2375,28 +2375,6 @@
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SupportShinobiTactics, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "$type": "Assets.Scripts.Models.Towers.Behaviors.SupportShinobiTacticsModel, Assembly-CSharp",
-      "multiplier": 0.92,
-      "maxStacks": 4,
-      "mutatorId": "ShinobiTactics",
-      "filters": [
-        {
-          "$type": "Assets.Scripts.Models.Towers.TowerFilters.FilterInBaseTowerIdModel, Assembly-CSharp",
-          "baseIds": [
-            "NinjaMonkey"
-          ],
-          "name": "FilterInBaseTowerIdModel_",
-          "ImplementationType": "Assets.Scripts.Simulation.Towers.TowerFilters.FilterInBaseTowerId, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-        }
-      ],
-      "buffLocsName": "ShinobiTacticsBuff",
-      "buffIconName": "BuffIconNinjax3x",
-      "maxStackSize": 4,
-      "isGlobalRange": false,
-      "name": "SupportShinobiTacticsModel_Support_",
-      "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.SupportShinobiTactics, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.RangeSupportModel, Assembly-CSharp",
       "multiplier": 0.0,
       "additive": 10.0,
