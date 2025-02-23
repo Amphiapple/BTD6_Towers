@@ -683,6 +683,7 @@
                           "overrideDistributionBlocker": false,
                           "distributeToChildren": true,
                           "damageModifierModels": null,
+                          "isFireBased": true,
                           "Interval": 1.25,
                           "name": "DamageOverTimeModel_Dot:Mortar",
                           "ImplementationType": "Assets.Scripts.Simulation.Bloons.Behaviors.DamageOverTime, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -931,7 +932,7 @@
                       "behaviors": [
                         {
                           "$type": "Assets.Scripts.Models.Bloons.Behaviors.DamageOverTimeModel, Assembly-CSharp",
-                          "damage": 15.0,
+                          "damage": 25.0,
                           "payloadCount": 0,
                           "immuneBloonProperties": 0,
                           "immuneBloonPropertiesOriginal": 0,
@@ -947,6 +948,7 @@
                           "overrideDistributionBlocker": false,
                           "distributeToChildren": true,
                           "damageModifierModels": null,
+                          "isFireBased": false,
                           "Interval": 1.25,
                           "name": "DamageOverTimeModel_Dot:MortarMoab",
                           "ImplementationType": "Assets.Scripts.Simulation.Bloons.Behaviors.DamageOverTime, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
