@@ -1621,6 +1621,8 @@
                   "name": "EffectModel_NoGrabEffect",
                   "ImplementationType": null
                 },
+                "grabRadius": 45.0,
+                "grabAmount": 150,
                 "extraGrabAmount": 0.0,
                 "isOnSubTower": false,
                 "mutator": {
@@ -1898,6 +1900,8 @@
                 "name": "EffectModel_NoGrabEffect",
                 "ImplementationType": null
               },
+              "grabRadius": 45.0,
+              "grabAmount": 150,
               "extraGrabAmount": 0.0,
               "isOnSubTower": false,
               "mutator": {
