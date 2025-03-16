@@ -3466,7 +3466,7 @@
                 "isUnique": true,
                 "mutatorId": "EtienneUAV",
                 "filters": null,
-                "isGlobal": false,
+                "isGlobal": true,
                 "isCustomRadius": false,
                 "customRadius": 0.0,
                 "appliesToOwningTower": false,

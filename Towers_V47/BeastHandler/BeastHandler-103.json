@@ -1735,6 +1735,8 @@
                 "initialYOffset": 30.0,
                 "keepPickingBloonsRange": 32.0,
                 "noGrabEffectModel": null,
+                "grabRadius": 25.0,
+                "grabAmount": 30,
                 "extraGrabAmount": 0.0,
                 "isOnSubTower": false,
                 "mutator": {
@@ -1975,6 +1977,8 @@
               "initialYOffset": 30.0,
               "keepPickingBloonsRange": 32.0,
               "noGrabEffectModel": null,
+              "grabRadius": 25.0,
+              "grabAmount": 30,
               "extraGrabAmount": 0.0,
               "isOnSubTower": false,
               "mutator": {
