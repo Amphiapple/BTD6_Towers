@@ -1,3 +1,3 @@
 All BTD6 Towers
 
-Updated for v44.1
+Updated for v48.0
