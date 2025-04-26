@@ -2034,7 +2034,7 @@
     },
     {
       "$type": "Assets.Scripts.Models.Towers.Behaviors.Abilities.AbilityModel, Assembly-CSharp",
-      "displayName": "Turbo Charge",
+      "displayName": "Controlled Burst",
       "description": "Makes this Monkey attack incredibly fast for 10 seconds.",
       "icon": {
         "$type": "NinjaKiwi.Common.ResourceUtils.SpriteReference, NinjaKiwi.Common",
@@ -2068,7 +2068,7 @@
           "destroyOnEnd": true,
           "useAttackTransform": false,
           "canSave": false,
-          "name": "CreateEffectOnAbilityModel_TurboCharge_",
+          "name": "CreateEffectOnAbilityModel_Controlled Burst_",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Behaviors.CreateEffectOnAbility, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
@@ -2085,7 +2085,7 @@
           },
           "heroSound": null,
           "heroSound2": null,
-          "name": "CreateSoundOnAbilityModel_TurboCharge",
+          "name": "CreateSoundOnAbilityModel_Controlled Burst",
           "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Behaviors.CreateSoundOnAbility, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         },
         {
@@ -2122,7 +2122,7 @@
       "AnimationOffset": -1.0,
       "IsPassive": false,
       "Cooldown": 10.0,
-      "name": "AbilityModel_TurboCharge",
+      "name": "AbilityModel_Controlled Burst",
       "ImplementationType": "Assets.Scripts.Simulation.Towers.Behaviors.Abilities.Ability, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
       "cooldownSpeedScale": 0.0,
       "animationOffset": -1.0,
@@ -3452,6 +3452,12 @@
                 "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.CreateProjectilesAlongPathWhenClose, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "projectileLandingEffectDelay": 0.3,
                 "projectileCreationDelay": 0.3
+              },
+              {
+                "$type": "Assets.Scripts.Models.Towers.Projectiles.Behaviors.DestroyProjectileIfTowerDestroyedModel, Assembly-CSharp",
+                "collisionPass": 0,
+                "name": "DestroyProjectileIfTowerDestroyedModel_SpikeageddonPathProjectile",
+                "ImplementationType": "Assets.Scripts.Simulation.Towers.Projectiles.Behaviors.DestroyProjectileIfTowerDestroyed, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
               },
               {
                 "$type": "Assets.Scripts.Models.GenericBehaviors.DisplayModel, Assembly-CSharp",
