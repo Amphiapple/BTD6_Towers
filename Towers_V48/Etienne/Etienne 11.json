@@ -4113,7 +4113,7 @@
       "appliesToOwningTower": false,
       "showBuffIcon": true,
       "buffLocsName": "BiggerRadiusBuff",
-      "buffIconName": "BuffIconVillage1xx",
+      "buffIconName": "BuffIconEtienne",
       "maxStackSize": 0,
       "onlyShowBuffIfMutated": false,
       "onlyAffectParagon": false,
